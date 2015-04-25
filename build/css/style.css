@@ -368,8 +368,7 @@ body {
   min-width: 768px;
 }
 .container {
-  max-width: 1030px;
-  min-width: 748px;
+  width: 1030px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -423,6 +422,9 @@ body {
 .banner {
   display: block;
   margin-bottom: 20px;
+}
+.grafik img {
+  width: 100%;
 }
 .main-header {
   background: #e6e7e8;
@@ -557,4 +559,35 @@ body {
   color: #1b75bc;
 }
 /*=== контекстный слой ===*/
+@media (max-width: 1030px) {
+  .container {
+    width: 748px;
+  }
+  .navigation__item a {
+    font-size: 12px;
+    margin-right: 14px;
+  }
+  .navigation__item a::after {
+    top: 5px;
+    right: -10px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .main-header__left {
+    width: 570px;
+  }
+  .main-header__right {
+    width: 155px;
+  }
+  .content__text {
+    width: 360px;
+  }
+  .content__sidebar {
+    width: 300px;
+  }
+  .banner img {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
