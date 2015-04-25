@@ -29,21 +29,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // jade compille
-    jade: {
-      style: {
-        options: {
-          data: {
-            debug: false
-          }
-        },
-        pretty: true,
-        files: {
-          "build/index.html": "src/jade/pages/index.jade"
-        }
-      }
-    },
-
     // автопрефиксер
     autoprefixer: {
       options: {
@@ -139,14 +124,6 @@ module.exports = function(grunt) {
 
     // отслеживаем изменений
     watch: {
-      jade: {
-        files: ['src/jade/pages/*.jade'],
-        tasks: ['jade'],
-        options: {
-          spawn: false,
-          livereload: true
-        },
-      },
       style: {
         files: ['src/less/**/*.less'],
         tasks: ['style'],
@@ -212,7 +189,6 @@ module.exports = function(grunt) {
 
   // базовый таск
   grunt.registerTask('default', [
-    'jade',
     'less',
     'autoprefixer',
     'copy:css_min',
