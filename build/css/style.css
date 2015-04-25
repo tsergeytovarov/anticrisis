@@ -409,6 +409,11 @@ body {
   width: 365px;
   float: right;
 }
+.content--inner .banner {
+  display: inline-block;
+  vertical-align: top;
+  margin: 45px 45px 0 0;
+}
 .main-title {
   font-size: 23px;
   line-height: 26px;
@@ -418,6 +423,10 @@ body {
   border-bottom: 1px solid #aeb0b2;
   font-weight: 400;
   color: #be1e2d;
+}
+.main-title img {
+  float: right;
+  margin: 10px 0 0 35px;
 }
 .banner {
   display: block;
