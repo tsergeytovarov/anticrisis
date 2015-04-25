@@ -1,0 +1,119 @@
+.main-header{
+  background: #e6e7e8;
+  padding-top: 50px;
+
+  &__left{
+    width: 855px;
+    float: left;
+  }
+
+  &__right{
+    width: 167px;
+    float: right;
+    padding-left: 20px;
+    border-left: 2px solid #c7c9cb;
+    box-sizing: border-box;
+    margin-top: 5px;
+    min-height: 105px;
+  }
+
+  &__text{
+    font-size: 10px;
+    color: #808285;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 1px;
+  }
+
+  &__phone{
+    font-size: 15px;
+    color: #231f20;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    strong{
+      font-weight: 800;
+    }
+  }
+
+  &__city{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ef4136;
+    text-decoration: none;
+    border-bottom: 1px dashed #ef4136;
+    margin-top: 7px;
+
+    &:hover{
+      border-bottom: 1px dashed transparent;
+    }
+  }
+}
+
+.logo{
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: top;
+
+  &::after{
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    background: url("../img/banner-top.png") no-repeat center;
+    width: 136px;
+    height: 22px;
+  }
+}
+
+.navigation{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+
+  &__item{
+    display: inline-block;
+    vertical-align: top;
+
+    a{
+      display: block;
+      font-size: 17px;
+      line-height: 17px;
+      color: #231f20;
+      text-decoration: none;
+      margin-right: 30px;
+      position: relative;
+
+      &::after{
+        content: "";
+        width: 7px;
+        height: 7px;
+        background: #939598;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        right: -19px;
+      }
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    &:last-child a{
+      margin-right: 0;
+
+      &::after{
+        display: none;
+      }
+    }
+  }
+}
