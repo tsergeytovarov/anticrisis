@@ -342,6 +342,7 @@ input[type='password'] {
   padding: 7px 10px;
   border: 1px solid #c9cacb;
   margin-bottom: 13px;
+  border-radius: 0;
 }
 input[type='text']:focus,
 textarea:focus,
@@ -675,10 +676,11 @@ body {
   .navigation {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: -6px;
   }
   .navigation__item a {
     font-size: 12px;
-    padding: 0 7px 0 7px;
+    padding: 0 6px 0 6px;
   }
   .navigation__item a::after {
     top: 18px;
@@ -707,7 +709,7 @@ body {
     font-size: 12px;
   }
   .logo {
-    font-size: 20px;
+    font-size: 18px;
   }
   .logo::after {
     width: 115px;
