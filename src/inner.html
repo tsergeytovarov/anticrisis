@@ -19,6 +19,7 @@
       <div class="main-header__left">
         <!-- logo -->
         <div class="logo">
+          <a href="#" class="crisis">График кризисов</a>
           Антикризисная компания
         </div>
         <!-- navigation -->
@@ -29,6 +30,20 @@
             </li>
             <li class="navigation__item">
               <a href="#">Антикризисное управление</a>
+              <ul class="navigation__submenu">
+                <li class="navigation__submenu-item">
+                  <a href="#">Досудебные мероприятия</a>
+                </li>
+                <li class="navigation__submenu-item">
+                  <a href="#">Возбуждение дела о банкротстве</a>
+                </li>
+                <li class="navigation__submenu-item">
+                  <a href="#">Финансовое оздоровление</a>
+                </li>
+                <li class="navigation__submenu-item">
+                  <a href="#">Внешнее управление</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation__item">
               <a href="#">Ликвидация предприятий</a>
@@ -76,8 +91,43 @@
       </article>
       <!-- right column -->
       <aside class="content__sidebar">
-
+        <figure class="content__graf">
+          <img src="img/graf-1.png" alt="">
+        </figure>
+        <a class="banner">
+          <img src="img/banner-online.png" alt="">
+        </a>
       </aside>
+    </div>
+    <div class="form">
+        <h2 class="form__title">Свяжитесь с нами</h2>
+        <form action="" method="">
+          <label for="t1">Ваш город*</label>
+          <select id="t1">
+            <option value="0">Санкт-Петербург</option>
+            <option value="1">Санкт-Петербург</option>
+            <option value="2">Санкт-Петербург</option>
+            <option value="3">Санкт-Петербург</option>
+            <option value="4">Санкт-Петербург</option>
+          </select>
+          <div class="row">
+            <div class="col s-6">
+              <label for="t2">Ваше имя*</label>
+              <input type="text" id="t2">
+            </div>
+            <div class="col s-6">
+              <label for="t3">Ваше имя*</label>
+              <input type="text" id="t3">
+            </div>
+          </div>
+          <label for="t4">Сообщение:</label>
+          <textarea id="t4"></textarea>
+          <p>Звездочкой (*) отмечены поля, обязательные для заполнения</p>
+          <div class="text-right">
+            <button type="submit" class="btn">Отправить</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 

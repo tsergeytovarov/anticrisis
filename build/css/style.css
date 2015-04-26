@@ -548,6 +548,7 @@ body {
 .navigation {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: -15px;
 }
 .navigation__list {
   list-style: none;
@@ -558,15 +559,17 @@ body {
 .navigation__item {
   display: inline-block;
   vertical-align: top;
+  position: relative;
 }
 .navigation__item a {
   display: block;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 40px;
   color: #231f20;
   text-decoration: none;
-  margin-right: 30px;
+  padding: 0 15px 0 15px;
   position: relative;
+  height: 40px;
 }
 .navigation__item a::after {
   content: "";
@@ -575,17 +578,63 @@ body {
   background: #939598;
   border-radius: 50%;
   position: absolute;
-  top: 6px;
-  right: -19px;
+  top: 16px;
+  right: -3px;
 }
-.navigation__item a:hover {
-  text-decoration: underline;
+.navigation__item:hover .navigation__submenu {
+  display: block;
+}
+.navigation__item:hover .navigation__submenu a {
+  background: transparent;
+  color: #231f20;
+}
+.navigation__item:hover a {
+  background: url("../img/btn.png") no-repeat center;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.navigation__item:hover a::after {
+  display: none;
 }
 .navigation__item:last-child a {
   margin-right: 0;
 }
 .navigation__item:last-child a::after {
   display: none;
+}
+.navigation__submenu {
+  width: 100%;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  box-sizing: border-box;
+  border: 5px solid #c11f2d;
+  box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.3);
+  border-top: 0;
+  padding: 0;
+  background: #fff;
+  padding: 9px;
+  display: none;
+}
+.navigation__submenu-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.navigation__submenu-item a {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #231f20;
+  height: auto;
+}
+.navigation__submenu-item a:after {
+  display: none;
+}
+.navigation__submenu-item a:hover {
+  background: transparent;
+  color: #c11f2d!important;
 }
 .main-footer {
   padding: 25px 0 40px;
