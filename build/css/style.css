@@ -625,9 +625,10 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 16px;
   color: #231f20;
   height: auto;
+  margin-bottom: 6px;
 }
 .navigation__submenu-item a:after {
   display: none;
@@ -671,16 +672,48 @@ body {
   .container {
     width: 748px;
   }
+  .navigation {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .navigation__item a {
     font-size: 12px;
-    margin-right: 14px;
+    padding: 0 7px 0 7px;
   }
   .navigation__item a::after {
-    top: 5px;
-    right: -10px;
+    top: 18px;
+    right: -3px;
+  }
+  .navigation__submenu {
+    padding: 5px;
+  }
+  .navigation__submenu a {
+    font-size: 10px;
+  }
+  .content__text .banner {
+    margin-right: 20px;
+  }
+  .main-title {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .content__graf img {
+    width: 100%;
+  }
+  .content__sidebar .banner {
+    margin-right: 0;
+  }
+  .crisis {
+    font-size: 12px;
   }
   .logo {
     font-size: 20px;
+  }
+  .logo::after {
+    width: 115px;
+    height: 20px;
+    background-size: 100%;
+    margin-top: 7px;
   }
   .main-header__left {
     width: 570px;
